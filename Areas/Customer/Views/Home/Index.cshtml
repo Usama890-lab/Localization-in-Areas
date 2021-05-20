@@ -1,0 +1,483 @@
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+
+
+    <style>
+
+        div {
+            font-family: 'Jameel Noori Nastaleeq';
+            
+            font-size:x-large;
+            /*direction: rtl;*/
+        }
+    </style>
+
+
+
+    <div style="direction:rtl;" class="row text-right text-justify">
+        <div class="col-md-12 col-sm-12">
+           
+            <div class="portlet light">
+                <div class="portlet-title">
+                    <div class="caption caption-md">
+                        <i class="icon-bar-chart theme-font-color hide"> </i>
+                        <span class="caption-subject bold uppercase">@localizer["Account Department Law"]</span>
+                    </div>
+                    <div class="inputs">
+                        <div class="portlet-input input-small input-inline">
+                            <button class="btn btn-theme btn-print" onclick="myFunction()">@localizer[" Print"] <i class="fa fa-print" aria-hidden="true"> </i> </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portlet-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover table-condensed">
+                            <thead>
+                                <tr>
+                                    <th align="center">@localizer["Id#"]</th>
+                                    <th align="center">@localizer["Law Details"]</th>
+                                    <th align="center">@localizer["Edit No"]</th>
+                                    <th align="center">@localizer["Page No"]</th>
+                                    <th align="center">@localizer["Previous Edit No"]</th>
+                                    <th align="center">@localizer["Previous Page No"]</th>
+
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td align="center"> <span class="en"> 1</span> </td>
+                                    <td>
+                                    @localizer["The Accounts Department is the industry's most important and autonomous department that is directly accountable to the C.E.O"]
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center"> <span class="en"> 2</span> </td>
+                                    <td>
+                                        @localizer["The details of all (internal and external) transactions of the industry are with the Accounts Department"]
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center"> <span class="en"> 3</span> </td>
+                                    <td>
+                                        @localizer["There are two accounts used for expenses in the industry which have cash in them, one is industry account and the other is petty cash account"]
+                                    </td>
+                                      
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center"> <span class="en"> 4</span> </td>
+                                    <td>
+                                           @localizer["Petty Cash Account has a monthly balance of Rs. 15000 / - which has to be used for the whole month. This account is mostly used for daily expenses like tea, biscuits, ice and petrol"]
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center"> <span class="en"> 5</span> </td>
+                                    <td>
+                                             @localizer["All the expenses of the industry will be borne from the industry account and the amount will be transferred from the main account (bank account of the industry) to the internal account of the industry"]
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center"> <span class="en"> 6</span> </td>
+                                    <td>
+                                        @localizer["The voucher for issuing cash for any purchases made from the industry account will be first uploaded by the C.E.O"]
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center"> <span class="en"> 7</span> </td>
+                                    <td>
+                                            @localizer["It is the responsibility of the Account Manager to arrange and secure the debit, credit voucher of Industry Account and Petty Cash Account"]
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center"> <span class="en"> 8</span> </td>
+                                    <td>
+                                     
+                                        @localizer["The salaries of all employees will be checked in their personal accounts. Salary amount will be required to be entered in the register of internal account of the industry, final pay slip will be made by the account office, general manager and C.E.O will check"]
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center"> <span class="en"> 9</span> </td>
+                                    <td>
+                                           @localizer["All checks will be approved through Debit Voucher. Approval will be given by C.E.O. The check book will be in the account office"]
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center"> <span class="en"> 10</span> </td>
+                                    <td>
+                                                @localizer["Debit voucher for expenditure from Main Account, Industry Internal Account, Petty Cash Account and Credit Voucher for refill will be used which will be approved by C.E.O"]
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center"> <span class="en"> 11</span> </td>
+                                    <td>
+                                            @localizer["After completion of purchasing, all bills, cash vouchers and item orders have to be cleared by C.E.O"]
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center"> <span class="en"> 12</span> </td>
+                                    <td>
+                                            @localizer["In case the C.E.O is busy or not present in the industry, the Account Manager will affix the Stamp of Telephone Approval on the Cash Voucher"]
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center"> <span class="en"> 13</span> </td>
+                                    <td>
+                                           @localizer["It is the responsibility of the account manager to daily close and file the cash voucher, demand, purchase order and bill"]
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center"> <span class="en"> 14</span> </td>
+                                    <td>
+                                           @localizer["Daily closing of account department is mandatory. It is also important to check the Daily C.E.O"]
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center"> <span class="en"> 15</span> </td>
+                                    <td>
+                                       
+                                      @localizer["Any income of any kind in the industry will first be deposited in the mandatory bank and then used, there will be credit in the main account register, credit voucher will also be made"]
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center"> <span class="en"> 16</span> </td>
+                                    <td>
+                                        @localizer["Anyone who takes an advance from the work industry will get his first advance voucher, which will also include his previous advance, installment and salary. Advance will be given after uploading the voucher from C.E.O. There will be entry in advance ledger"]                                 
+                                       
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center"> <span class="en"> 17</span> </td>
+                                    <td>
+                                     
+                                        @localizer["If cash is included with the gate pass and service order then there will be a photocopy of the gate pass and service order, the original bill, gate pass and service order will be closed by the account manager in daily closing and the photocopy will be put in his file by the concerned department"]
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center"> <span class="en"> 18</span> </td>
+                                    <td>
+                                      
+                                      @localizer["If cash is not included with the gate pass and service order, then the gate department and service order will be placed in the file only by the concerned department"]
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center"> <span class="en"> 19</span> </td>
+                                    <td>
+                                       @localizer["If you want to get the money back by returning the purchased product, it will become a gate pass, all the details will come on the gate pass, the product will be out of the industry at the gate pass and will be returned to the market Will come This amount has to be deposited in the bank's industry account on the same day to get the bank slip and this bank slip has to be credited in the register of Kerman account attached with the gate pass. The concerned department will attach a photocopy of the gate pass in its file"]
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center"> <span class="en"> 20</span> </td>
+                                    <td>
+                                        
+                                        @localizer["The Accounts Department will be responsible for any errors in the cash voucher or bill order. Which can be fined"]
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center"> <span class="en"> 21</span> </td>
+                                    <td>
+                                       
+                                       @localizer["If the material purchased from the suppliers with whom the account is to be made, then the entry of the bill must also be made in the ledger of the suppliers"]
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center"> <span class="en"> 22</span> </td>
+                                    <td>
+                                          
+                                       @localizer["Internal ledgers will be used for transactions within the industry, such as the sales income from the sales office will first go into the internal ledger and then go to the bank"]
+
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center"> <span class="en"> 23</span> </td>
+                                    <td>
+                                       
+                                        @localizer["The Account Manager will check the monthly and annual report with the C.E.O"]
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="text" class="form-control blank">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
